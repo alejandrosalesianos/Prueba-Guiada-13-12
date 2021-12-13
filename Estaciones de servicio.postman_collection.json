@@ -1,0 +1,216 @@
+{
+	"info": {
+		"_postman_id": "1fbebac3-8294-4b6b-ac17-e1df7cbd49d6",
+		"name": "Estaciones de servicio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "FindAll Estaciones",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/estacion/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"estacion",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Añadir Estacion de servicio",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"Gasolinera Menorca\",\r\n    \"marca\":\"Cepsa\",\r\n    \"ubicacion\":\"37.39034409566091,-5.998690906051934\",\r\n    \"tieneAutolavado\": true,\r\n    \"precioGasoilNormal\": 12.3,\r\n    \"precioGasolina95Octanos\": 14.1,\r\n    \"precioGasoilEspecial\": 12.1,\r\n    \"precioGasolina98\": 10.9,\r\n    \"servicios\": \"Baño\",\r\n    \"fechaApertura\": \"2007-12-03T10:15:30\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/estacion/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"estacion",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Añadir Estacion de servicio Error",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"Gasolinera Menorca\",\r\n    \"marca\":\"Cepsa\",\r\n    \"ubicacion\":\"37.39034409566091,-5.998690906051934\",\r\n    \"tieneAutolavado\": true,\r\n    \"precioGasoilNormal\": 12.3,\r\n    \"precioGasolina95Octanos\": 14.1,\r\n    \"precioGasoilEspecial\": 12.1,\r\n    \"precioGasolina98\": 10.9,\r\n    \"servicios\": \"Baño\",\r\n    \"fechaApertura\": \"2007-12-03T10:15:30\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/estacion/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"estacion",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindOne Estacion",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/estacion/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"estacion",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindOne Estacion Error",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/estacion/4234",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"estacion",
+						"4234"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteOne Estacion",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/estacion/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"estacion",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteOne Estacion Error",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/estacion/fallo",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"estacion",
+						"fallo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Estacion",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"Gasolinera Mayorca\",\r\n    \"marca\":\"Cepsa\",\r\n    \"ubicacion\":\"47.39034409566091,-10.998690906051934\",\r\n    \"tieneAutolavado\": true,\r\n    \"precioGasoilNormal\": 12.3,\r\n    \"precioGasolina95Octanos\": 14.1,\r\n    \"precioGasoilEspecial\": 12.1,\r\n    \"precioGasolina98\": 10.9,\r\n    \"servicios\": \"Baño\",\r\n    \"fechaApertura\": \"2007-12-03T10:15:30\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/estacion/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"estacion",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Estacion Error",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"\",\r\n    \"marca\":\"Cepsa\",\r\n    \"ubicacion\":\"47.39034409566091,-10.998690906051934\",\r\n    \"tieneAutolavado\": true,\r\n    \"precioGasoilNormal\": 12.3,\r\n    \"precioGasolina95Octanos\": -14.1,\r\n    \"precioGasoilEspecial\": 12.1,\r\n    \"precioGasolina98\": 10.9,\r\n    \"servicios\": \"Baño\",\r\n    \"fechaApertura\": \"2007-12-03T10:15:30\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/estacion/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"estacion",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
