@@ -1,16 +1,20 @@
 package com.salesianostriana.practicaguiada.Dto;
 
+import com.salesianostriana.practicaguiada.validacion.anotaciones.PastOrPresentDate;
 import com.salesianostriana.practicaguiada.validacion.anotaciones.UniqueUbicacion;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.Lob;
 import javax.validation.constraints.*;
 import java.time.LocalDateTime;
+import java.time.temporal.ChronoUnit;
 
 @Data
 @NoArgsConstructor @AllArgsConstructor
+@PastOrPresentDate(fechaApertura = "fechaApertura", fechaRegistro = "fechaRegistro")
 public class CreateEstacionDto {
 
     private Long id;
@@ -44,4 +48,6 @@ public class CreateEstacionDto {
 
     @Past
     private LocalDateTime fechaApertura;
+
+    private LocalDateTime fechaRegistro = LocalDateTime.now();
 }

@@ -1,5 +1,6 @@
 package com.salesianostriana.practicaguiada.errores.model;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.salesianostriana.practicaguiada.errores.model.ApiSubError;
 import lombok.*;
 
@@ -8,6 +9,9 @@ import lombok.*;
 @Builder
 public class ValidationError extends ApiSubError {
 
-    private String objeto, campo,mensaje;
+    private String objeto, mensaje;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    private String campo;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
     private Object ValorRechazado;
 }

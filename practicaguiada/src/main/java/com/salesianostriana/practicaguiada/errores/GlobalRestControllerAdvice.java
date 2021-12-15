@@ -70,7 +70,7 @@ public class GlobalRestControllerAdvice extends ResponseEntityExceptionHandler {
 
     private ResponseEntity<Object> buildApiError( HttpStatus status, Exception ex, WebRequest request, List<ApiSubError> subErrors){
         return ResponseEntity.status(status)
-                .body(new ApiError(status, ex.getMessage(),((ServletWebRequest) request).getRequest().getRequestURI(),subErrors));
+                .body(new ApiError(status,status.value(), ex.getMessage(),((ServletWebRequest) request).getRequest().getRequestURI(),subErrors,LocalDateTime.now()));
     }
     private ResponseEntity<Object> buildApiError(Exception ex, WebRequest request){
         return ResponseEntity.status(HttpStatus.NOT_FOUND)

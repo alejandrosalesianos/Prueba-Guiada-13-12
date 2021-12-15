@@ -36,11 +36,13 @@ public class ApiError {
         this.fecha = fecha;
     }
 
-    public ApiError(HttpStatus status, String mensaje, String ruta, List<ApiSubError> subErrors) {
+    public ApiError(HttpStatus status,int codigo, String mensaje, String ruta, List<ApiSubError> subErrors, LocalDateTime fecha) {
         this.status = status;
+        this.codigo = codigo;
         this.mensaje = mensaje;
         this.ruta = ruta;
         this.subErrors = subErrors;
+        this.fecha = fecha;
     }
 
     public ApiError(HttpStatus notFound, String message) {
