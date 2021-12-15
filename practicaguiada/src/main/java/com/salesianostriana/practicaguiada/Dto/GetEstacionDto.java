@@ -22,5 +22,6 @@ public class GetEstacionDto {
     private double precioGasolina98;
     private String servicios;
     private LocalDateTime fechaApertura;
+    private LocalDateTime fechaRegistro;
 
 }

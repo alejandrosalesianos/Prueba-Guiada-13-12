@@ -1,4 +1,4 @@
-package com.salesianostriana.practicaguiada.errores;
+package com.salesianostriana.practicaguiada.errores.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonInclude;

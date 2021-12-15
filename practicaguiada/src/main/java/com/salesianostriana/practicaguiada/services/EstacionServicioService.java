@@ -1,7 +1,7 @@
 package com.salesianostriana.practicaguiada.services;
 
-import com.salesianostriana.practicaguiada.errores.EstacionNotFoundException;
-import com.salesianostriana.practicaguiada.errores.ListEntityNotFoundException;
+import com.salesianostriana.practicaguiada.errores.excepciones.EstacionNotFoundException;
+import com.salesianostriana.practicaguiada.errores.excepciones.ListEntityNotFoundException;
 import com.salesianostriana.practicaguiada.model.EstacionDeServicio;
 import com.salesianostriana.practicaguiada.repository.EstacionServicioRepository;
 import lombok.RequiredArgsConstructor;

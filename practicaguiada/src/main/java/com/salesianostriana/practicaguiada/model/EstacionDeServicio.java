@@ -42,6 +42,8 @@ public class EstacionDeServicio {
     @Past
     private LocalDateTime fechaApertura;
 
+    private LocalDateTime fechaRegistro = LocalDateTime.now();
+
 
 
 }

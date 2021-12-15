@@ -1,4 +1,4 @@
-package com.salesianostriana.practicaguiada.errores;
+package com.salesianostriana.practicaguiada.errores.excepciones;
 
 import javax.persistence.EntityNotFoundException;
 

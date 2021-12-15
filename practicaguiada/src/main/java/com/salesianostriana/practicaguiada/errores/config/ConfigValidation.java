@@ -1,4 +1,4 @@
-package com.salesianostriana.practicaguiada.errores;
+package com.salesianostriana.practicaguiada.errores.config;
 
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;

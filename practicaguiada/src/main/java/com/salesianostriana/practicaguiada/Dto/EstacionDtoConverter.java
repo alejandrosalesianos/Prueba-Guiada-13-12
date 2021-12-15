@@ -3,6 +3,8 @@ package com.salesianostriana.practicaguiada.Dto;
 import com.salesianostriana.practicaguiada.model.EstacionDeServicio;
 import org.springframework.stereotype.Component;
 
+import java.time.LocalDateTime;
+
 @Component
 public class EstacionDtoConverter {
 
@@ -34,6 +36,7 @@ public class EstacionDtoConverter {
                 .precioGasolina95Octanos(estacionDeServicio.getPrecioGasolina95Octanos())
                 .fechaApertura(estacionDeServicio.getFechaApertura())
                 .servicios(estacionDeServicio.getServicios())
+                .fechaRegistro(LocalDateTime.now())
                 .build();
     }
 
